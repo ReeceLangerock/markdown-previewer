@@ -1,0 +1,12 @@
+.MarkdownDisplay {
+  flex-grow: 1;
+  border:1px solid;
+  text-align: left;
+  max-width: 40%;
+  min-width: 200px;
+  min-height: 500px;
+  margin-left: 15px;
+  padding-left: 2px;
+  
+}
+
