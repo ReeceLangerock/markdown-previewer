@@ -3,27 +3,26 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 
-import { MarkdownDisplay } from "./../components/MarkdownDisplay";
+import { ButtonContainer } from "./../components/ButtonContainer";
+import Button from "./../components/Button";
+
 import { shallow, mount, find, render, simulate } from "enzyme";
 
 const initialState = { text: "" };
 
 const mockStore = configureStore();
 
-describe("MarkdownDisplay", () => {
+describe("ButtonContainer", () => {
   let component;
   beforeEach(() => {
-    const props = {
-      text: ""
-    };
-    component = mount(<MarkdownDisplay {...props} />);
+    component = shallow(<ButtonContainer />);
   });
 
   it("has the correct class", () => {
-    expect(component.hasClass("MarkdownDisplay")).toEqual(true);
+    expect(component.hasClass("ButtonContainer")).toEqual(true);
   });
 
-  it("has a div", () => {
-    expect(component.find("div").length).toBe(1);
+  it("has  3 buttons", () => {
+    expect(component.find(Button).length).toBe(3);
   });
 });
