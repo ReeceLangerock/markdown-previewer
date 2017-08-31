@@ -1,15 +1,56 @@
 .App {
   text-align: center;
+  height: 100%;
+  flex: 1;
 }
-
-.App__container {
-  text-align: center;
-  padding: 10px;
-}
-
 
 .App__markdown-container {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  margin: 15px 0px 25px 0px;
+  font-family: "gravity";
+}
+
+@media (max-width: 500px) {
+  .App__markdown-container {
+    flex-wrap: wrap;
+  }
+}
+
+@font-face {
+  font-family: "gravity";
+  src: url("./Gravity-Light.otf");
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#root > [data-reactroot] {
+  min-height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+[data-reactroot] {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("./paul-morris-295077.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
