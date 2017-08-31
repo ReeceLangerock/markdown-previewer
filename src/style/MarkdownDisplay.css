@@ -1,12 +1,24 @@
 .MarkdownDisplay {
   flex-grow: 1;
-  border:1px solid;
+  border: 2px solid #5bc0eb;
+  border-radius: 5px;
+
   text-align: left;
-  max-width: 40%;
-  min-width: 200px;
-  min-height: 500px;
-  margin-left: 15px;
-  padding-left: 2px;
+  max-width: 35%;
+  min-width: 250px;
+  height: 575px;
+  overflow-y: scroll;
   
+  margin-left: 20px;
+  padding: 2px 2px 2px 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgba(255,255,255,.65)
 }
 
+@media(max-width: 500px){
+  
+    .MarkdownDisplay{
+      margin: 10px 0 0 0;
+    }
+    
+  }

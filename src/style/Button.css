@@ -1,4 +1,37 @@
-.Button{
-  margin: 5px;
-  color: blue;
+.Button {
+  border-radius: 5px;
+  color: #333;
+
+  padding: 6px 12px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.16), 0 2px 4px rgba(0,0,0, 0.23);
+  
+}
+
+.Button:hover {
+  box-shadow: 0 3px 6px rgba(255,255,255, 0.19), 0 3px 6px rgba(255,255,255, 0.23);
+  
+}
+.Button__primary {
+  background: #9AC53D;
+  border-color: #9bc53d;
+
+}
+
+.Button__danger {
+  color: white;
+  background: #e55934;
+  border-color: #fa7921;
+
+  
+}
+
+.Button button:focus {
+  outline-color: white;
 }
