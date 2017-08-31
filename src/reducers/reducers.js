@@ -37,11 +37,11 @@ Spain.
   action
 ) => {
   switch (action.type) {
-    case "SET_MARKDOWN_TEXT":
-      return { ...state, text: action.text };
-    case "RESET_MARKDOWN_TEXT":
-      return { ...state, text: '' };
+    case 'SET_MARKDOWN_TEXT':
+      return { ...state, text: action.text }
+    case 'RESET_MARKDOWN_TEXT':
+      return { ...state, text: '' }
     default:
-      return state;
+      return state
   }
-};
+}
