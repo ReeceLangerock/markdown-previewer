@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-
+    "history": "^4.7.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-
     "react-redux": "^5.0.6",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.0.11",
@@ -22,15 +21,17 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^2.9.1",
     "chai": "^4.1.1",
-    "react-test-renderer": "^15.6.1",
-    
     "chai-jquery": "^2.0.0",
+    "enzyme": "^2.9.1",
     "jsdom": "^11.2.0",
-    "react-addons-test-utils": "^15.6.0"
+    "react-addons-test-utils": "^15.6.0",
+    "react-test-renderer": "^15.6.1"
   },
   "standard": {
-    "ignore": ["/src/registerServiceWorker.js", "/src/tests/"]
+    "ignore": [
+      "/src/registerServiceWorker.js",
+      "/src/tests/"
+    ]
   }
 }
